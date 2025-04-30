@@ -1,0 +1,77 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(to right, #8b0000, #ff4d4d); /* тёмно-красный → светло-красный */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    gap: 5px;
+  }
+  
+  .nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 20px;
+  }
+
+  .nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: white;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .nav a:hover {
+    color: #ffda47;
+  }
+
+  .nav a:hover::after {
+    width: 100%;
+  }
+  
+  .cta-button {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 126, 95, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 126, 95, 0.7);
+  }
+
+  .logo-img{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+  }
