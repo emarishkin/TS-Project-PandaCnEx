@@ -1,0 +1,51 @@
+.tariff-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex: 1;
+    max-width: 340px;
+    transition: transform 0.2s ease;
+  }
+  
+  .tariff-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tariff-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #8b0000;
+  }
+  
+  .tariff-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .tariff-card li {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .tariff-button {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tariff-button:hover {
+    background-color: #b30000;
+  }
