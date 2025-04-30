@@ -9,6 +9,16 @@
     top: 0;
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    gap: 20;
+    
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15;
   }
   
   .logo {
