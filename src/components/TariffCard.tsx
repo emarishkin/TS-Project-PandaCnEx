@@ -4,9 +4,10 @@ import '../styles/TariffCard.css'
 
 interface TariffCardProps{
     tariff:Tariff
+    onRequestClick:()=>void
 }
 
-export const TariffCard:FC<TariffCardProps> = ({tariff}) =>{
+export const TariffCard:FC<TariffCardProps> = ({tariff,onRequestClick}) =>{
     
     return(
         <div className="tariff-card">
@@ -17,7 +18,7 @@ export const TariffCard:FC<TariffCardProps> = ({tariff}) =>{
           <li key={index}>{item}</li>
         ))}
       </ul>
-      <button className="tariff-button">Оставить заявку</button>
+      <button className="tariff-button"  onClick={onRequestClick}>Оставить заявку</button>
     </div>
     )
 }

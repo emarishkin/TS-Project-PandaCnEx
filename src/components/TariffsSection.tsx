@@ -3,7 +3,12 @@ import { TariffCard } from "./TariffCard";
 import '../styles/TariffsSection.css'
 import { tariffs } from "../data/tariffs";
 
-export const TariffsSection: FC = () => {
+interface TariffsSectionProps{
+  onRequestClick: () => void;
+}
+
+
+export const TariffsSection: FC<TariffsSectionProps> = ({onRequestClick}) => {
 
     return (
       <section className="tariffs-section">
@@ -11,7 +16,7 @@ export const TariffsSection: FC = () => {
           <h2>Тарифы</h2>
           <div className="tariff-grid">
             {tariffs.map((tariff, index) => (
-              <TariffCard key={index} tariff={tariff} />
+              <TariffCard onRequestClick={onRequestClick} key={index} tariff={tariff} />
             ))}
           </div>
         </div>

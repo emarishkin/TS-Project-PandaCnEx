@@ -1,16 +1,16 @@
-.tariffs-section {
-  background-color: #fffaf8;
+.workflow-section {
+    background-color: #fffaf8;
     padding: 80px 0;
   }
   
-  .tariffs-section h2 {
+  .workflow-section h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
     color: #222;
   }
   
-  .tariff-grid {
+  .workflow-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

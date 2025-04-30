@@ -1,0 +1,22 @@
+.workflow-step-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #8b0000;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }

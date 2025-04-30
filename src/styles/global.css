@@ -82,3 +82,25 @@
       display: none; /* Бургер можно будет включить тут позже */
     }
   }
+
+
+  .cta-button-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 14px 20px;
+    background: #8b0000;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button-fixed:hover {
+    background: #b30000;
+  }
+  
