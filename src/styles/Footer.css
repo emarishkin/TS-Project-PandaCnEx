@@ -1,0 +1,43 @@
+.footer {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    font-size: 0.95rem;
+  }
+  
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer h3,
+  .footer h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    margin: 6px 0;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .footer-nav a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: white;
+  }

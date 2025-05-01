@@ -1,0 +1,18 @@
+.services-section {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+  }
+  
+  .services-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #222;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }

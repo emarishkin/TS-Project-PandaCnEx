@@ -7,6 +7,8 @@ import { Modal } from './components/Modal'
 import { TariffsSection } from './components/TariffsSection'
 import { WorkflowSection } from './components/WorkflowSection'
 import { ContactForm } from './components/ContactForm'
+import { Footer } from './components/Footer'
+import { ServicesSection } from './components/ServicesSection'
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
       <Header onRequestClick={openForm} />
       <HeroSection onRequestClick={openForm} />
       <TariffsSection onRequestClick={openForm} />
+      <ServicesSection />
       <WorkflowSection />
       
       <button className="cta-button-fixed" onClick={openForm}>
@@ -29,6 +32,8 @@ function App() {
       <Modal isOpen={isModalOpen} onClose={closeForm}>
         <ContactForm />
       </Modal>
+
+      <Footer />
     </>
   )
 }
