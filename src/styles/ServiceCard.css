@@ -1,20 +1,77 @@
-.service-card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s ease;
-    flex: 1;
-    min-width: 240px;
-    max-width: 300px;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .service-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
+.card-outer {
+  perspective: 1200px;
+  width: 300px;
+  height: 360px;
+  margin: 20px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+  box-shadow:
+    10px 10px 30px rgba(0, 0, 0, 0.1),
+    -10px -10px 30px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.service-icon {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ff4d4d, #8b0000);
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 15px rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.card-front h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.card-front p {
+  font-size: 0.95rem;
+  color: #444;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Glare (отблеск) */
+.glare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: background 0.2s ease;
+  border-radius: 20px;
+}
