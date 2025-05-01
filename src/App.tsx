@@ -9,6 +9,7 @@ import { WorkflowSection } from './components/WorkflowSection'
 import { ContactForm } from './components/ContactForm'
 import { Footer } from './components/Footer'
 import { ServicesSection } from './components/ServicesSection'
+import { TestimonialsSection } from './components/TestimonialsSection'
 
 function App() {
 
@@ -32,7 +33,8 @@ function App() {
       <Modal isOpen={isModalOpen} onClose={closeForm}>
         <ContactForm />
       </Modal>
-
+      
+      <TestimonialsSection />
       <Footer />
     </>
   )
