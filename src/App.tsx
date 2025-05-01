@@ -10,6 +10,7 @@ import { ContactForm } from './components/ContactForm'
 import { Footer } from './components/Footer'
 import { ServicesSection } from './components/ServicesSection'
 import { TestimonialsSection } from './components/TestimonialsSection'
+import { ContactsSection } from './components/ContactsSection'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
       </Modal>
       
       <TestimonialsSection />
+      <ContactsSection />
       <Footer />
     </>
   )

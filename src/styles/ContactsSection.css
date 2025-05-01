@@ -1,0 +1,26 @@
+.contacts-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .contacts-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contacts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .contacts-grid h4 {
+    margin-bottom: 10px;
+    color: #8b0000;
+  }
+  
+  .contacts-grid p {
+    margin: 0;
+  }
