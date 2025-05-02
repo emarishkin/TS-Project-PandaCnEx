@@ -16,3 +16,37 @@
     gap: 30px;
     justify-content: center;
   }
+
+  .testimonial-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .testimonial-form input,
+  .testimonial-form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .testimonial-form button {
+    background: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .testimonial-form button:hover {
+    background: #b30000;
+  }
+  
