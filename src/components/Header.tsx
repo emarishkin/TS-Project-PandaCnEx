@@ -13,7 +13,7 @@ export const Header: FC<HeaderProps> = ({ onRequestClick }) => {
       <div className="container header-inner">
       <div className="logo">
                     <img className="logo-img" src={logo} alt="logo-panda" />
-                    <h3>Panda CN Express</h3>
+                    <Link to="/">Panda CN Express</Link>
                 </div>
         <nav className="nav">
           <Link to="/services">Услуги</Link>

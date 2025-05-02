@@ -49,3 +49,22 @@
   .tariff-button:hover {
     background-color: #b30000;
   }
+
+  .tariff-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .tariff-button.secondary {
+    background: transparent;
+    border: 1px solid #8b0000;
+    color: #8b0000;
+  }
+  
+  .tariff-button.secondary:hover {
+    background: #ffe5e5;
+  }
+  

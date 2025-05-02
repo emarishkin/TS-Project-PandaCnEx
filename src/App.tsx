@@ -9,6 +9,7 @@ import { HomePage } from "./pages/HomePage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { ContactsPage } from "./pages/ContactsPage";
 import { AboutPage } from "./pages/AboutPage";
+import { TariffPage } from "./components/TariffPage";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/tariffs/:id" element={<TariffPage />} />
       </Routes>
       <Footer />
       <Modal isOpen={isModalOpen} onClose={closeForm}>
