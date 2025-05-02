@@ -1,45 +1,35 @@
-import { useState } from 'react'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Modal } from "./components/Modal";
+import { ContactForm } from "./components/ContactForm";
+import { useState } from "react";
 
-import { Header } from './components/Header'
-import { HeroSection } from './components/HeroSection'
-import { Modal } from './components/Modal'
-import { TariffsSection } from './components/TariffsSection'
-import { WorkflowSection } from './components/WorkflowSection'
-import { ContactForm } from './components/ContactForm'
-import { Footer } from './components/Footer'
-import { ServicesSection } from './components/ServicesSection'
-import { TestimonialsSection } from './components/TestimonialsSection'
-import { ContactsSection } from './components/ContactsSection'
+import { HomePage } from "./pages/HomePage";
+import { ServicesPage } from "./pages/ServicesPage";
+import { ContactsPage } from "./pages/ContactsPage";
+import { AboutPage } from "./pages/AboutPage";
 
 function App() {
-
   const [isModalOpen, setModalOpen] = useState(false);
-
   const openForm = () => setModalOpen(true);
   const closeForm = () => setModalOpen(false);
 
   return (
-    <>
+    <Router>
       <Header onRequestClick={openForm} />
-      <HeroSection onRequestClick={openForm} />
-      <TariffsSection onRequestClick={openForm} />
-      <ServicesSection />
-      <WorkflowSection />
-      
-      <button className="cta-button-fixed" onClick={openForm}>
-        Оставить заявку
-      </button>
-
+      <Routes>
+      <Route path="/" element={<HomePage onRequestClick={openForm} />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+      <Footer />
       <Modal isOpen={isModalOpen} onClose={closeForm}>
         <ContactForm />
       </Modal>
-      
-      <TestimonialsSection />
-      <ContactsSection />
-      <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

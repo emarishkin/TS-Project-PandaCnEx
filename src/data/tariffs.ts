@@ -2,6 +2,7 @@ import { Tariff } from "../types/Tariff";
 
 export const tariffs: Tariff[] = [
   {
+    id: "express",
     title: "Экспресс",
     price: "от $8.5 / кг",
     description: [
@@ -12,6 +13,7 @@ export const tariffs: Tariff[] = [
     ]
   },
   {
+    id: "standard",
     title: "Обычная доставка",
     price: "от $5.0 / кг",
     description: [
@@ -19,16 +21,6 @@ export const tariffs: Tariff[] = [
       "Бюджетный вариант",
       "Сборные грузы",
       "Оформление документов"
-    ]
-  },
-  {
-    title: "Медленное авто",
-    price: "от $1.5 / кг",
-    description: [
-      "30+ дней",
-      "Крупные партии",
-      "Таможенное оформление",
-      "Отгрузка контейнерами"
     ]
   }
 ];
