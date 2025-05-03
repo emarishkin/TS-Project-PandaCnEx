@@ -4,7 +4,7 @@ import { Service } from "../types/Service";
 export const services: Service[] = [
   {
     icon: "📦",
-    title: "Консолидация",
+    title: "Консолидация.",
     text: "Объединение нескольких посылок в одну для экономии на доставке."
   },
   {
