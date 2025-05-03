@@ -6,6 +6,7 @@ import { WorkflowSection } from "../components/WorkflowSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
 import { ContactsSection } from "../components/ContactsSection";
 
+
 interface HomePageProps {
   onRequestClick: () => void;
 }
@@ -19,6 +20,7 @@ export const HomePage: FC<HomePageProps> = ({ onRequestClick }) => {
       <WorkflowSection />
       <TestimonialsSection />
       <ContactsSection />
+      
     </>
   );
 };

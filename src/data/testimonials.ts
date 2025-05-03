@@ -9,7 +9,7 @@ export const testimonials: Testimonial[] = [
   {
     name: "Екатерина Л.",
     text: "Отличный сервис, всё оформили за меня, просто оплатила и получила свой товар вовремя.",
-    avatar:'https://prostitutkibelgrodagid.com/media/big/96554/713392.jpg'
+    avatar:'https://avatars.mds.yandex.net/i?id=55ad501200fca7610f2c3bc022b759bd_l-5208099-images-thumbs&n=13'
   },
   {
     name: "Александр Романов",

@@ -12,17 +12,18 @@ export const Header: FC<HeaderProps> = ({ onRequestClick }) => {
     <header className="header">
       <div className="container header-inner">
       <div className="logo">
-                    <img className="logo-img" src={logo} alt="logo-panda" />
-                    <Link to="/">Panda CN Express</Link>
-                </div>
-        <nav className="nav">
+          <img className="logo-img" src={logo} alt="logo-panda" />
+          <Link to="/">Panda CN Express</Link>
+      </div>
+      <nav className="nav">
+          <Link to="/tariffs">Тарифы</Link>
           <Link to="/services">Услуги</Link>
           <Link to="/about">О нас</Link>
           <Link to="/contacts">Контакты</Link>
-        </nav>
-        <button className="cta-button" onClick={onRequestClick}>
+      </nav>
+      <button className="cta-button" onClick={onRequestClick}>
           Оставить заявку
-        </button>
+      </button>
       </div>
     </header>
   );

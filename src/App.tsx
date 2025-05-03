@@ -10,6 +10,7 @@ import { ServicesPage } from "./pages/ServicesPage";
 import { ContactsPage } from "./pages/ContactsPage";
 import { AboutPage } from "./pages/AboutPage";
 import { TariffPage } from "./components/TariffPage";
+import TariffsPage from "./pages/TariffsPage";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -20,7 +21,8 @@ function App() {
     <Router>
       <Header onRequestClick={openForm} />
       <Routes>
-      <Route path="/" element={<HomePage onRequestClick={openForm} />} />
+        <Route path="/" element={<HomePage onRequestClick={openForm} />} />
+        <Route path="/tariffs" element={<TariffsPage onRequestClick={openForm}/>} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/about" element={<AboutPage />} />
